@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Gris claro de fondo */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el cuerpo tenga como mínimo el alto de la ventana */
+}
+
+.navbar {
+  background-color: #000; /* Negro */
+  color: #fff; /* Color de texto (blanco) */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el NavBar esté en la parte superior */
+  display: flex; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.logo img{
+  max-width: 5rem;
+  max-height: 3rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  margin: 5px 0;
+}
+
+.sub-menu li:hover {
+  background-color: #555;
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+}
+
+.cart-widget i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.cart-notification {
+  background-color: #fff; /* Fondo de la notificación (blanco) */
+  color: #000; /* Color de texto de la notificación (negro) */
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
