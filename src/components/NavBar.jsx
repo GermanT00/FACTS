@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import "../styles.css";
 
@@ -34,8 +35,15 @@ const NavBar = () => {
               </ul>
             )}
           </li>
-          <li>Inicio</li>
-          <li>Contacto</li>
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/products">Productos</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contacto</Link>
+          </li>
         </ul>
       </div>
       <CartWidget />
